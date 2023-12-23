@@ -1,0 +1,241 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f4f4f4;
+}
+
+#navbar {
+    background-color: #fff;
+    width: 100%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 10px 0;
+    text-align: center;
+    top: 0;
+    z-index: 1000;
+}
+
+#navbar img {
+    max-height: 60px;
+    max-width: 100%;
+}
+
+#welcome-section {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: #B6C4B6;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#searchInput {
+    border-radius: 10px;
+    padding: 10px;
+    width: 80%;
+    margin: 10px 0;
+}
+
+#result {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(20%, 1fr)); /* Adjusted width */
+    gap: 16px;
+}
+
+.dish {
+    padding: 10px;
+    border: 1px solid #ddd;
+    background-color: #EEF0E5;
+    color: #000;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+.dish1{
+    padding: 10px;
+    border: 1px solid #ddd;
+    background-color: #EEF0E5;
+    color: #000;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+
+
+.dish:hover {
+    scale: 1.01;
+}
+
+#image-1{
+    display: flex;
+    margin-top: 20px;
+}
+
+#images-1 {
+    display: flex;
+    float: right;
+    max-width: 100px;
+    height: auto;
+}
+
+.sponsor {
+    height: 200px;
+}
+
+#meal-section {
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    box-sizing: border-box;
+    background-color: #304D30;
+    color: #fff;
+    display: flex;
+    justify-content:center;
+    flex-direction: column;
+}
+#random-meal-div{
+    text-align: center;
+    padding: 10px;
+    box-sizing: border-box;
+    background-color: #304D30;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row-reverse;
+}
+
+
+#healthy-food {
+    /* max-width: 20%; */
+    height: 90vh;
+    width: 50vw;
+    align-self: flex-end;
+}
+
+#random-result{
+    width: 50vw;
+    text-align:center;
+}
+
+#category-section {
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: #1b5e20; 
+    color: #fff;
+}
+
+#category-section img {
+    max-width: 50px; 
+    height: auto;
+}
+
+#category-section #category-result,
+#category-section #result {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(20%, 1fr)); /* Adjusted width */
+    gap: 16px;
+}
+
+.modal {
+    display: none;
+    position: fixed; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    overflow: hidden;
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    max-width: 80%; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+footer{
+    color: black;
+    height: 30vh;
+}
+
+@media only screen and (max-width:856px){
+    .sponsor{
+        display: none;
+    }
+   .smaller{
+    font-size: small;
+   }
+   #category-section #category-result{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+   }
+   /* #category-section img{
+    height: 250px;
+    width: 250px;
+   } */
+    .dish{
+    height: 420px;
+    width: 350px;
+   }
+   .dish1{
+    height: 100%;
+    width: 100%;
+   }
+   .dish1 h2{
+    font-size: smaller;
+   }
+   #random-result{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+   }
+
+   #healthy-food{
+    display: none;
+   }
+   #meal-section {
+    display: flex;
+    justify-content:center;
+    align-items: center;
+   }
+   #random-meal-div{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+   }
+}
+
+ 

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Dish Viewer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="navbar">
+        <img id="home" src="/rrr/asset/Grabfood.png" alt="Logo">
+    </div>
+    <div id="welcome-section">
+        <div id="image-1" >
+            <img class="sponsor" src="/rrr/asset/healthy food-amico.svg" alt="">
+        </div>
+        <div>
+            <h2>Welcome to GrabFood</h2>
+            <p>
+                Explore a variety of delicious dishes from around the world. Click on a random dish or use the search
+                bar to find dishes by category. Get ready to embark on a culinary adventure!
+            </p>
+            <input type="text" id="searchInput" placeholder="Enter category...">
+            
+        </div>
+        <div id="image-2" >
+            <img class="sponsor" src="/rrr/asset/eating Korean food-cuate.svg" alt="">
+        </div>
+    </div>
+    <div id="meal-section">
+        <!-- <h2 id="randomMeal">Your Random Meal</h2> -->
+        <div id="random-meal-div">
+            <div id="random-result"></div>
+            <img id="healthy-food" src="/rrr/asset/healthy food vs fast food-cuate.svg" alt="Random Meal Image">
+        </div>
+    </div>
+    <div id="category-section">
+        <h2>Related to Search</h2>
+        <div id="category-result"></div>
+    </div>
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h2 id="modalTitle"></h2>
+            <div id="modalContent"></div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>
